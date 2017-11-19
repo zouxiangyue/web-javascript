@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>商品评价</title>
+	<meta charset="UTF-8"/>
+	<style type="text/css">
+	.bg
+	{
+		background-image: url(images/bg.jpg);
+		height:40px;
+		width:500px;
+		padding-top: 5px
+	}
+	p
+	{
+		margin-top: 6px;
+		margin-left:20px;
+	}
+	.star,textarea,input
+	{
+		margin-top:15px;
+		margin-left:20px;
+	}
+	input
+	{
+		width:450px;
+		height:220px;
+		margin-left:20px;
+	}
+    .pinglun
+    {
+    	height:30px;
+    	width:80px;
+    	margin-left: 394px;
+    	margin-top:2px;
+    }
+    #text
+    {
+    	text-align: center;
+    }
+	</style>
+</head>
+<body>
+	<div class="bg">
+		<p>宝贝与描述相符（打分匿名）</p>
+	</div>
+	<div class="star">
+		<img src="images/star0.png" id="1" onmouseover="starPic(this.id);" onmouseout="hid();" onclick="qd(this.id);">
+		<img src="images/star0.png" id="2" onmouseover="starPic(this.id);" onmouseout="hid();" onclick="qd(this.id);">
+		<img src="images/star0.png" id="3" onmouseover="starPic(this.id);" onmouseout="hid();" onclick="qd(this.id);">
+		<img src="images/star0.png" id="4" onmouseover="starPic(this.id);" onmouseout="hid();" onclick="qd(this.id);">
+		<img src="images/star0.png" id="5" onmouseover="starPic(this.id);" onmouseout="hid();" onclick="qd(this.id);">
+	</div>
+	<form>
+		<input type="text" id="text",value="">
+		<select class="pinglun">
+			<option>公开评论</option>
+		</select>
+	</form>
+	<script>
+	var arr=['差','一般','好','很好','非常好'];
+	var pics=document.getElementsByTagName("img");
+	function starPic(i){
+		for(var j=0;j<i;j++){
+			if(i>2)pics[j].src="images/star2.png";
+			else if(i<3)pics[j].src="images/star1.png";
+		};
+		/*for(var j=0;i<2 && j<i;j++){
+			pics[j].src="images/star1.png";
+		};*/
+		document.getElementById("text").value=arr[i-1];
+	}
+	var con=false;
+	function hid()
+	{
+		if(con==true)return con;
+		else{
+			for(var j=0;j<5;j++){pics[j].src="images/star0.png";document.getElementById("text").value=""}
+		}
+	}
+	function qd(i)
+	{
+		for(var j=0;j<i;j++){
+			if(i>2)pics[j].src="images/star2.png";
+			else if(i<3)pics[j].src="images/star1.png";
+		};
+		con=true;
+	}
+	</script>
+</body>
+</html>
