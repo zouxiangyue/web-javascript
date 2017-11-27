@@ -1,0 +1,55 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<title>图片自动滚动</title>
+	<meta charset="UTF-8">
+	<style>
+	#picScroll
+	{
+		white-space: nowrap;
+		overflow: hidden;
+		width:680px;
+		margin:0 auto;
+	}
+	</style>
+</head>
+<body>
+	<div id="picScroll" onmouseover="clearSrco()"
+	onmouseout="t=setInterval(changeToleft,10);">
+		<span id="picScroll1">
+			<img src="images/1.jpg" />
+			<img src="images/2.jpg" />
+			<img src="images/3.jpg" />
+			<img src="images/4.jpg" />
+			<img src="images/5.jpg" />
+			<img src="images/6.jpg" />
+			<img src="images/7.jpg" />
+			<img src="images/8.jpg" />
+		</span>
+        <span id="picScroll2">
+			<img src="images/1.jpg" />
+			<img src="images/2.jpg" />
+			<img src="images/3.jpg" />
+			<img src="images/4.jpg" />
+			<img src="images/5.jpg" />
+			<img src="images/6.jpg" />
+			<img src="images/7.jpg" />
+			<img src="images/8.jpg" />
+		</span>
+		
+ 	</div> 
+<script type="text/javascript" src="autochange.js">
+var srco=0
+function changeToleft()
+{
+	if(srco>picScroll1.offsetWidth)srco=0;
+	srco=srco+1;
+	document.getElementById('picScroll').scrollLeft=srco;
+};
+var t=setInterval(changeToleft,10);
+function clearSrco(){
+    clearInterval(t);
+}
+</script>
+</body>
+</html>
