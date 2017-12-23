@@ -33,7 +33,7 @@
 
 		})
 		$("input[name=password1]").blur(function(){
-			
+			$(this).nextAll().html("");
 			if($(this).val()==""){
 				$(this).parent().append("<span>密码不能为空！</span>")
 			}
@@ -45,7 +45,7 @@
 		$("input[name=password2]").blur(function(){
 			$(this).nextAll().text("");
 			if($(this).val()!=$("input[name=password1]").val()){
-				$(this).parent().append("<span>密码不匹配！</span>")
+				$(this).parent().append("<span>两次密码不一致！</span>")
 			}
 			else{
 				$(this).nextAll().text("");
