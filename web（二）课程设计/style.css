@@ -1,0 +1,327 @@
+
+    body{
+        background-color: #f2f2f2;
+    }
+    #div0{
+        height:60px;
+    }
+    #div0>img{
+        padding-left: 80px
+    }
+    #div0 form {
+        height:39px;
+        float:right;
+        margin-right: 90px;
+        margin-top:18px;
+    }
+    #div0 form input{
+        height:33px;
+        width:240px;
+        border:1px solid #dcdcdc;
+        color:#888;
+        background-color: #dcdcdc;
+        float:left;
+        padding-left:10px;
+    }
+    #div0 form button{
+        width:37px;
+        height:37px;
+        border-width:0px;
+        padding:0px;
+    }
+    #div0 form button:hover,a:hover,span:hover{
+        cursor:pointer;
+    }
+    #ul{
+        list-style-type: none;
+        background-image: url(images/bg1.png);
+        position: absolute;
+        left:0px;
+        right:0px;
+        height:50px;
+        padding-left:50px;
+    }
+    #ul li{
+        width:130px;
+        float:left;
+        padding-top:12px;
+        height:38px;
+    }
+    #ul li ul{
+        list-style-type: none;
+        padding:0px;
+        display:none;
+        padding-top:12px;
+    }
+    #ul li a{
+        text-decoration: none;
+        font:23px '楷体';
+        color:#eee;
+        padding-left:17px;
+        font-weight:bolder;
+    }
+    #ul li:hover{
+        background-color: #c00;
+    }
+    #ul li a:hover{
+        color:#fff;
+    }
+   #ul li ul li {
+        background-color: #c00;
+        padding-top:10px;
+   }
+   #ul li ul li:hover{
+        background-color: #d33;
+        color:#eee;
+   }
+   #ul li ul li a{
+        font-weight: normal;
+
+   }
+   #ul div{
+        padding-top:15px;
+        float: right;
+        margin-right: 90px
+   }
+   #ul div a{
+        text-decoration: none;
+        color:#ddd;
+        font:15px '宋体';
+   }
+   #ul div a:hover{
+        text-decoration: underline;
+   }
+   #ul li.show ul{
+        display:block;
+   }
+   *:focus{
+        outline: none;
+   }
+   .move_img{
+       margin:0px auto;
+       height:400px;
+       width:1186px;
+       margin-top:66px;
+       overflow: hidden;
+   }
+   .saying{
+       heigth:30px;
+       width:700px;
+       border:1px solid #000;
+       border-radius:50px 50px 0px 0px;
+       background-color: #000;
+       opacity:0.4;
+       position: relative;
+       top:-54px;
+       left:330px;
+   }
+   .saying p{
+       color:#fff;
+       font:italic bolder 25px "仿宋";
+       text-align: center;
+       margin:11px auto;
+   }
+   .content{
+       width:1168px;
+       height:480px;
+       position:relative;
+       top:-35px;
+       margin:0px auto;
+       background-color: #fff;
+       padding:10px;
+   }
+   .content_news{
+       height:30px;
+   }
+   .content_news ul{
+       list-style-type: none;
+       padding-top:2px;
+       margin-top:0px;
+   }
+   .content_news ul li{
+       float: left;
+       margin-left: 20px
+   }
+   .content_news ul li a{
+       color:#333;
+       font:17px "楷体";
+       text-decoration: none;
+       margin-left: 4px;
+   }
+   .content_news ul li a:hover{
+       text-decoration: underline;
+   }
+   .content_news div{
+       height:20px;
+       width:60px;
+       background-color:#c00;
+       border-radius: 8px;
+       text-align:center;
+       color:#fff;
+       font:10px '宋体';
+       padding-top: 5px;
+       float: left;
+   }
+   .content_art{
+       width:370px;
+       float:left;
+       margin-right: 5px;
+       padding-left:8px;
+       border-radius: 10px;
+   }
+   .content_art div{
+       margin-top: 10px;
+       height:120px;
+   }
+   .content_art p{
+       height:20px;
+       margin-bottom: 10px
+   }
+   .content_art p img{
+       margin-right: 10px;
+       float:left;
+   }
+   .content_art p a{
+       text-decoration: none;
+       color:#000;
+       font:18px "楷体";
+       margin-right: 10px;
+       float:left;
+   }
+   .content_art p a:hover{
+       color:#c00;
+   }
+   .hr{
+       display: block;
+       height:5px;
+       background-color: #f2f2f2;
+   }
+   .art{
+       height:100px;
+       width:100px;
+       
+   }
+   .content_art div p{
+       width:260px;
+       height:100px;
+       float:right;
+       margin:0px;
+       padding-top: 10px;
+       color:#333;
+       font:16px "仿宋";
+       padding-left: 3px;
+   }
+   .content_art div p span{
+       font:900 15px "宋体"; 
+       color:#000;
+   }
+   .content_art div p span:hover{
+       color:#c00;
+       text-decoration: underline;
+   }
+   #footer
+   {
+       background-color:#aaa;
+       height:130px;
+       color:#a0a0a0;
+       text-align:center;
+       position: absolute;
+       left: 0px;
+       right: 0px;
+   }
+   #footer>ul
+   {
+       margin:0 auto;
+       width:500px;
+       height:50px;
+       padding-top:15px;
+       font-size:10px; 
+   }
+   #footer>ul>li
+   {
+       width:80px;
+       list-style-type:none;
+       float:left;
+   }
+   #footer>ul>li>a
+   {
+       color:#fff;
+       text-decoration:none;
+       margin-right:15px;
+   }
+   #footer>ul>li>a:hover
+   {
+       text-decoration:underline;
+   }
+   #footer>p
+   {
+       color:#eef;
+       font-size:14px;
+       margin:0px;
+   }
+   .sign0{
+       height:1210px;
+       position: absolute;
+       top:0px;
+       left:0px;
+       right:0px;
+       bottom: 0px;
+       background-color: #000;
+       opacity: 0.5;
+       display: none;
+       overflow: hidden;
+   }
+   .cha,.sign_in,.sign_up{
+       display: none;
+   }
+   .cha{
+       position: absolute;
+       top:0px;
+       right:0px;
+       height:30px;
+       width:40px;
+       color:#000;
+       font:900 20px "宋体";
+       text-align: center;
+       padding-top: 8px;
+       border-radius: 0px 10px 0px 0px;
+   }
+   .cha:hover{
+       background-color: #c00;
+       cursor:pointer;
+   }
+   .sign_in,.sign_up{
+       position: absolute;
+       top:60px;
+       left:33%;
+       border-radius: 10px;
+       background-image: url(images/sign_bg.png);
+       height:550px;
+       width:500px;
+       padding:5px;
+   }
+   .sign_in input,.sign_up input{
+       width:265px;
+       height:30px;
+       display: block;
+       color:#777;
+       margin-left: 115px;
+       margin-top:20px;
+       padding-left:5px;
+       border:1px solid #888;
+   }
+   .sign_in p,.sign_up p{
+       color:#000;
+       font:20px "宋体";
+       width:200px;
+       text-align: center;
+       margin-left:150px;
+   }
+   .sign_in img{
+       margin-left:78px;
+   }
+   h1{
+      font-family: "宋体";
+      width:100;
+      margin-left:200px;
+   }
