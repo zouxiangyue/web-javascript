@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QQ空间</title>
+    <meta charset="UTF-8"/>
+    <style type="text/css">
+    #ul{
+        margin:0px auto;
+        list-style-type: none;
+        background-color: #ddd;
+    }
+    #ul li{
+        width:120px;
+        float:left;
+        background-color: #ccc;
+    }
+    #ul li ul{
+        height:100px;
+        list-style-type: none;
+        padding:0px;
+        display:none;
+    }
+    #ul li a{
+        text-decoration: none;
+        color:#434;
+        margin-left: 40px;
+    }
+   #ul li ul li a{
+       margin-left: 24px;
+   }
+   #ul li.ul1 ul{
+    display:block;
+   }
+    </style>
+</head>
+<body>
+<ul id="ul">
+    <li class="li">
+        <a href="#">主页</a>
+        <ul>
+            <li><a href="#">个性化中心</a></li>
+            <li><a href="#">关注</a></li>
+            <li><a href="#">留言板</a></li>
+        </ul>
+    </li>
+    <li class="li">
+        <a href="#">相册</a>
+        <ul>
+            <li><a href="#">我的相册</a></li>
+            <li><a href="#">动态图集</a></li>
+            <li><a href="#">感动影集</a></li>
+        </ul>
+    </li>
+    <li class="li">
+        <a href="#">日志</a>
+        <ul>
+            <li><a href="#">我的日志</a></li>
+            <li><a href="#">好友日志</a></li>
+            <li><a href="#">其他日志</a></li>
+        </ul>
+    </li>
+    <li class="li">
+        <a href="#">好友</a>
+        <ul class="ul1">
+            <li><a href="#">好友动态</a></li>
+            <li><a href="#">好友资料</a></li>
+            <li><a href="#">好友空间</a></li>
+        </ul>
+    </li>
+    <li style="width:142px" class="li">
+        <a href="#">个人资料</a>
+        <ul style="margin-left:18px">
+            <li><a href="#">基本资料</a></li>
+            <li><a href="#">兴趣爱好</a></li>
+            <li><a href="#">留言板</a></li>
+        </ul>
+    </li>
+</ul>
+<script type="text/javascript">
+var get=document.getElementsByTagName('li')
+for(var i=0;i<get.length;i++){
+    get[i].onmouseover=function(){
+        get[i].style.display="block";
+    }
+    get[i].onmouseout=function(){
+        this.style.display="block"
+    }
+}
+
+</script>
+</body>
+</html>

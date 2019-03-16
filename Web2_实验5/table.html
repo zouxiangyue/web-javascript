@@ -17,7 +17,6 @@
 			border:1px slid gray;
 		}
 	</style>
-	<script src="jquery-3.2.1.slim.min.js"></script>
 </head>
 <body>
 	<table width="1000px" border="1" id="table" >
@@ -30,14 +29,11 @@
 	<input type="button" name="" id="delete" value="删除一行" style="margin-left:840px;"/>
 	<script>
 	var getBut=document.getElementsByTagName('input');
-	var n=0;
 	var getTable=document.getElementById("table");
 	getBut[0].onclick=function(){
-		n++
 		var newTr=document.createElement("tr");
 		newTr.height="30px";
 		newTr.fontSize='36px';
-		newTr.className="border1";
 		newTr.onmouseover=function(){
 			newTr.className="border0"
 		};
